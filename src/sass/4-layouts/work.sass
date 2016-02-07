@@ -1,0 +1,63 @@
+.worksection
+   background-color: #ccc
+   .thumb-container
+      max-width: 960px
+      margin: 0 auto
+      padding-bottom: 100px
+      +clearfix
+      .work-1
+         background-image: url(/img/iCentre.png)
+         
+      .work-2
+         background-image: url(/img/front.png)
+      .work-3
+         background-image: url(/img/greenman.jpg)
+      .work-4
+         background-image: url(/img/van-der-hoom.jpg)
+      .work-5
+         background-image: url(/img/urban-retreat.jpg)
+      .work-6
+         background-image: url(/img/Delight-theme-by-AgileUI.jpg)
+      .work-7
+         background-image: url(/img/sasquatch.jpg)
+      .work-8
+         background-image: url(/img/html5-ship.jpg)
+      .thumb-box
+         display: block
+         width: 25%
+         padding-top: 16%
+         float: left
+         position: relative
+         overflow: hidden
+         @media screen and (max-width: 840px)
+            width: 50%
+            padding-top: 25%
+         background-position: center center
+         background-repeat: no-repeat
+         background-size: cover
+      
+         .thumb-hover
+            +position(absolute, 100% 0px null 0px)
+            height: 100%
+            background: fade-out(#E36600, 0.2)
+            text-align: center
+            +transition
+            
+            strong
+               display: block
+               padding: 20px 20px 10px
+               color: white
+               font-weight: 300
+               //text-transform: uppercase
+               font-size: 20px
+               line-height: 1.2
+            .zoom-icon
+               +size(40px)
+               margin: 0px auto
+               background-image: url(/img/zoom.png)
+               background-position: center center
+               background-repeat: no-repeat
+               background-size: cover
+         &:hover 
+            .thumb-hover
+               +position(absolute, 0% 0px null 0px)
